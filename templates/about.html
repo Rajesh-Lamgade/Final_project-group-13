@@ -1,0 +1,47 @@
+<!-- templates/about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Project</title>
+    <style>
+        {% include 'style.css' %}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('data') }}">View Data</a>
+        <a href="{{ url_for('about') }}">About</a>
+    </div>
+
+    <h1>About the Project</h1>
+
+    <p>This web application is the final project for the DAB111 course (Python). It involves the entire process of collecting, cleaning, and displaying data using web scraping, data processing, and Flask web development.</p>
+
+    <h2>Data Collection</h2>
+    <p>We utilized BeautifulSoup (bs4) to scrape data from a website, extracting relevant information for a race event.</p>
+
+    <h2>Data Cleaning</h2>
+    <p>The collected data underwent a cleaning process to handle missing values and ensure accuracy and consistency.</p>
+
+    <h2>Data Storage</h2>
+    <p>The cleaned data was stored using SQLite3 to create a database, allowing for efficient data retrieval and management.</p>
+
+    <h2>Webpage Development</h2>
+    <p>Flask, a Python web framework, was employed to develop this webpage. The framework facilitates the integration of data and presentation, creating a seamless and interactive user experience.</p>
+
+    <h2>Project Acknowledgment</h2>
+    <p>This project serves as the crown of skills and knowledge acquired during the DAB111 course, showcasing the ability to apply data collection, cleaning, and web development concepts in a real-world scenario.</p>
+
+    <h2>References</h2>
+    <ol>
+        <li><a href="https://www.youtube.com/watch?v=XVv6mJpFOb0&t=2575s" target="_blank">Web Scraping Tutorial with Python | BeautifulSoup and Requests</a></li>
+        <li><a href="https://www.geeksforgeeks.org/authentication-using-python-requests/?ref=lbp" target="_blank">Authentication using Python Requests</a></li>
+        <li><a href="https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository" target="_blank">Adding a file to a GitHub Repository</a></li>
+    </ol>
+
+    <p class="signature">Project developed by <b> RAJESH LAMGADE, IBRAHIM KAMBUR, SAHIL THAPA </b></p>
+</body>
+</html>

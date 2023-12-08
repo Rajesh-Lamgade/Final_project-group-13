@@ -1,0 +1,38 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Landing Page</title>
+    <style>
+        {% include 'style.css' %}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('data') }}">View Data</a>
+        <a href="{{ url_for('about') }}">About</a>
+    </div>
+
+    <h1>Welcome to Our Project!</h1>
+
+    <h2>Project Information</h2>
+    <p>This web application is a project for the Python course DAB111 - Data Analytics for Business in the 1st semester. It involves the collection, cleaning, and display of race event data using web scraping and Flask web development.</p>
+
+    <h2>Project Group: Group 13</h2>
+    <h3>Group Members:</h3>
+    <ul>
+        <li>Rajesh Lamgade</li>
+        <li>Ibrahim Kambur</li>
+        <li>Sahil Thapa</li>
+    </ul>
+
+    <h2>Explore the Project</h2>
+    <p>View the race data: <a href="{{ url_for('data') }}">View Data</a></p>
+    <p>Learn more about the project: <a href="{{ url_for('about') }}">About the Project</a></p>
+
+    <p class="signature">Project developed by Group 13</p>
+</body>
+</html>
